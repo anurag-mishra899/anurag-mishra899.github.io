@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Security, Ethics & Compliance - AI Knowledge Base</title>
+    <meta name="description" content="Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure">
+    <link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+<div class="breadcrumb">
+    <a href="/">Home</a>
+    <span>›</span>
+    <span>AI Security, Ethics & Compliance</span>
+</div>
+
+<div class="hero" style="padding: 2rem 0;">
+    <h1>AI Security, Ethics & Compliance</h1>
+    <p>Covers security, ethical issues, and compliance concerns in AI development and deployment.</p>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">1</div>
+            <div class="stat-label">Articles</div>
+        </div>
+    </div>
+</div>
+
+<div class="search-container">
+    <input type="text" id="searchBox" class="search-box" placeholder="Search in AI Security, Ethics & Compliance...">
+</div>
+
+<div class="articles-grid">
+    
+    <a href="/articles/the-article-discusses-anthropics-recent-security-report-accusing-chinese-ai-labs-deepseek-moonshot.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">Web Article</span>
+            <span>2026-03-01</span>
+            
+            <span>Shared by Puneet EY</span>
+            
+        </div>
+        <h3>The article discusses Anthropic's recent security report accusing Chinese AI labs DeepSeek, Moonshot AI (Kimi), and MiniMax of conducting large-scale </h3>
+        <p class="summary">The article discusses Anthropic's recent security report accusing Chinese AI labs DeepSeek, Moonshot AI (Kimi), and MiniMax of conducting large-scale distillation attacks against Anthropic's Claude model. The report alleges these labs created thousands of fraudulent accounts and generated millions of exchanges with Claude, violating Anthropic's terms of service. The article explores the implications for users of Chinese AI tools.</p>
+        <div class="article-tags">
+            
+            <span class="tag">Anthropic</span>
+            
+            <span class="tag">DeepSeek</span>
+            
+            <span class="tag">Kimi</span>
+            
+            <span class="tag">Moonshot AI</span>
+            
+            <span class="tag">MiniMax</span>
+            
+            <span class="tag">Claude</span>
+            
+            <span class="tag">distillation attacks</span>
+            
+            <span class="tag">AI security</span>
+            
+            <span class="tag">Chinese AI labs</span>
+            
+            <span class="tag">terms of service violations</span>
+            
+        </div>
+    </a>
+    
+</div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+    
+<script>
+document.getElementById('searchBox').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const articles = document.querySelectorAll('.article-card');
+
+    articles.forEach(article => {
+        const title = article.querySelector('h3').textContent.toLowerCase();
+        const summary = article.querySelector('.summary').textContent.toLowerCase();
+        const tags = Array.from(article.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+
+        if (title.includes(searchTerm) || summary.includes(searchTerm) || tags.includes(searchTerm)) {
+            article.style.display = 'block';
+        } else {
+            article.style.display = 'none';
+        }
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-/* AI Knowledge Base - Technical Blog Style */
+/* AI Knowledge Base - Clean Light Style */
 
 :root {
   --primary-color: #2563eb;
@@ -11,19 +11,6 @@
   --code-bg: #f3f4f6;
   --header-height: 60px;
   --max-width: 1200px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-color: #3b82f6;
-    --secondary-color: #06b6d4;
-    --text-color: #f3f4f6;
-    --text-light: #9ca3af;
-    --bg-color: #111827;
-    --bg-secondary: #1f2937;
-    --border-color: #374151;
-    --code-bg: #1f2937;
-  }
 }
 
 * {
@@ -94,16 +81,14 @@ main {
 .hero {
   text-align: center;
   padding: 4rem 0;
+  background-color: var(--bg-color);
 }
 
 .hero h1 {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-color);
 }
 
 .hero p {
@@ -177,8 +162,9 @@ main {
 }
 
 .category-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: var(--primary-color);
 }
 
 .category-card h3 {
@@ -212,7 +198,8 @@ main {
 
 .article-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: var(--primary-color);
 }
 
 .article-meta {

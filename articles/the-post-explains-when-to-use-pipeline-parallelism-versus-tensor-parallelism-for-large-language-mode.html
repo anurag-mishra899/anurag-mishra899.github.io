@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The post explains when to use pipeline parallelism versus tensor parallelism for large language models (LLMs) like 70B parameter models, emphasizing t - AI Knowledge Base</title>
+    <meta name="description" content="Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure">
+    <link rel="stylesheet" href="../static/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+<div class="breadcrumb">
+    <a href="../">Home</a>
+    <span>›</span>
+    <a href="../llm-inference-serving.html">LLM Inference & Serving</a>
+    <span>›</span>
+    <span>The post explains when to use pipeline parallelism versus tensor parallelism for large language models (LLMs) like 70B parameter models, emphasizing t</span>
+</div>
+
+<article>
+    <div class="article-header">
+        <h1>The post explains when to use pipeline parallelism versus tensor parallelism for large language models (LLMs) like 70B parameter models, emphasizing t</h1>
+        <div class="meta">
+            <span class="article-type">LinkedIn Article/Post</span>
+            <span>📅 2026-03-17</span>
+            
+            <span>👤 Shared by Anurag Mishra</span>
+            
+            <span>🏷️ LLM Inference & Serving</span>
+        </div>
+    </div>
+
+    
+
+    <div class="source-card">
+        <strong>📎 Original Source:</strong><br>
+        <a href="https://www.linkedin.com/posts/nagraj-desai_llm-machinelearning-distributedsystems-share-7439388622132359168-2MzJ?utm_source=share&utm_medium=member_ios&rcm=ACoAABjhTGgBfcORudLuR1yY-QnmR8xfIw2dgSs" target="_blank" rel="noopener noreferrer" class="source-url">https://www.linkedin.com/posts/nagraj-desai_llm-machinelearning-distributedsystems-share-7439388622132359168-2MzJ?utm_source=share&utm_medium=member_ios&rcm=ACoAABjhTGgBfcORudLuR1yY-QnmR8xfIw2dgSs</a>
+    </div>
+
+    <div class="article-content">
+        <h2>Summary</h2>
+        <p>The post explains when to use pipeline parallelism versus tensor parallelism for large language models (LLMs) like 70B parameter models, emphasizing that distributed inference is necessary due to GPU memory limits. It recommends tensor parallelism within a single node (with fast interconnects like NVLink) and pipeline parallelism across nodes (with slower interconnects like PCIe or Ethernet), and suggests a hybrid approach for optimal performance, aligning parallelism strategy with network architecture.</p>
+
+        <h2>Key Topics</h2>
+        <div class="article-tags">
+            
+            <span class="tag">pipeline parallelism</span>
+            
+            <span class="tag">tensor parallelism</span>
+            
+            <span class="tag">distributed inference</span>
+            
+            <span class="tag">large language models</span>
+            
+            <span class="tag">GPU</span>
+            
+            <span class="tag">NVLink</span>
+            
+            <span class="tag">PCIe</span>
+            
+            <span class="tag">Ethernet</span>
+            
+            <span class="tag">InfiniBand</span>
+            
+            <span class="tag">hybrid parallelism</span>
+            
+            <span class="tag">model serving</span>
+            
+            <span class="tag">ML infrastructure</span>
+            
+        </div>
+
+        
+
+        
+        <h2>Related Articles</h2>
+        <div class="articles-grid">
+            
+            <a href="../articles/the-post-critiques-the-hype-around-vllm-for-llm-inference-arguing-that-many-influencers-promote-it.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-27</span>
+                </div>
+                <h3>The post critiques the hype around vLLM for LLM inference, arguing that many influencers promote it without understanding inference engine internals. </h3>
+                <p class="summary">The post critiques the hype around vLLM for LLM inference, arguing that many influencers promote it without understanding inference engine internals. It explains that while vLLM excels at high-concurrency, single-turn workloads, SGLang is significantly faster for agentic, multi-turn, or prefix-reuse scenarios due to its RadixAttention caching. The author provides a practical decision matrix for choosing between inference engines based on workload characteristics.</p>
+            </a>
+            
+            <a href="../articles/the-post-critiques-the-hype-around-vllm-for-llm-inference-emphasizing-that-many-influencers-recomme.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-27</span>
+                </div>
+                <h3>The post critiques the hype around vLLM for LLM inference, emphasizing that many influencers recommend it without understanding how inference engines </h3>
+                <p class="summary">The post critiques the hype around vLLM for LLM inference, emphasizing that many influencers recommend it without understanding how inference engines work. It explains that while vLLM excels at high concurrency and single-turn workloads, SGLang offers significantly lower time-to-first-token (TTFT) for agentic, multi-turn, or prefix-reuse scenarios due to its superior caching mechanism. The author advises engineers to choose inference engines based on actual workload characteristics rather than popularity.</p>
+            </a>
+            
+            <a href="../articles/the-post-critiques-the-trend-of-defaulting-to-vllm-for-llm-inference-based-solely-on-popularity-emp.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-27</span>
+                </div>
+                <h3>The post critiques the trend of defaulting to vLLM for LLM inference based solely on popularity, emphasizing that SGLang can significantly outperform </h3>
+                <p class="summary">The post critiques the trend of defaulting to vLLM for LLM inference based solely on popularity, emphasizing that SGLang can significantly outperform vLLM for agentic, multi-turn, or prefix-heavy workloads due to its RadixAttention-based caching. The author provides a decision matrix, explaining that vLLM excels at high-concurrency, single-turn scenarios, while SGLang is better for structured, repeated, or conversational tasks, urging engineers to choose inference engines based on actual workload needs.</p>
+            </a>
+            
+        </div>
+        
+    </div>
+</article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+    
+</body>
+</html>

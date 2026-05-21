@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health, Wellness & Productivity - AI Knowledge Base</title>
+    <meta name="description" content="Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure">
+    <link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+<div class="breadcrumb">
+    <a href="/">Home</a>
+    <span>›</span>
+    <span>Health, Wellness & Productivity</span>
+</div>
+
+<div class="hero" style="padding: 2rem 0;">
+    <h1>Health, Wellness & Productivity</h1>
+    <p>Resources and routines to improve physical health, posture, and productivity for technical professionals.</p>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Articles</div>
+        </div>
+    </div>
+</div>
+
+<div class="search-container">
+    <input type="text" id="searchBox" class="search-box" placeholder="Search in Health, Wellness & Productivity...">
+</div>
+
+<div class="articles-grid">
+    
+    <a href="/articles/the-video-presents-a-quick-3-minute-daily-mobility-routine-designed-to-counteract-the-negative-effe.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">YouTube Video</span>
+            <span>2026-04-26</span>
+            
+            <span>Shared by Anurag Mishra</span>
+            
+        </div>
+        <h3>The video presents a quick, 3-minute daily mobility routine designed to counteract the negative effects of prolonged sitting. It demonstrates specific</h3>
+        <p class="summary">The video presents a quick, 3-minute daily mobility routine designed to counteract the negative effects of prolonged sitting. It demonstrates specific exercises aimed at improving flexibility, posture, and overall mobility for people who spend much of their day seated.</p>
+        <div class="article-tags">
+            
+            <span class="tag">mobility routine</span>
+            
+            <span class="tag">flexibility</span>
+            
+            <span class="tag">posture</span>
+            
+            <span class="tag">exercise</span>
+            
+            <span class="tag">sitting</span>
+            
+            <span class="tag">daily routine</span>
+            
+        </div>
+    </a>
+    
+    <a href="/articles/the-video-presents-a-simple-effective-3-minute-daily-mobility-routine-designed-to-counteract-the-ne.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">YouTube Video</span>
+            <span>2026-04-26</span>
+            
+            <span>Shared by Anurag Mishra</span>
+            
+        </div>
+        <h3>The video presents a simple, effective 3-minute daily mobility routine designed to counteract the negative effects of prolonged sitting. It demonstrat</h3>
+        <p class="summary">The video presents a simple, effective 3-minute daily mobility routine designed to counteract the negative effects of prolonged sitting. It demonstrates specific exercises aimed at improving hip flexibility, posture, and overall movement quality for people who spend much of their day seated.</p>
+        <div class="article-tags">
+            
+            <span class="tag">mobility routine</span>
+            
+            <span class="tag">sitting posture</span>
+            
+            <span class="tag">hip flexibility</span>
+            
+            <span class="tag">daily exercise</span>
+            
+            <span class="tag">movement quality</span>
+            
+        </div>
+    </a>
+    
+</div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+    
+<script>
+document.getElementById('searchBox').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const articles = document.querySelectorAll('.article-card');
+
+    articles.forEach(article => {
+        const title = article.querySelector('h3').textContent.toLowerCase();
+        const summary = article.querySelector('.summary').textContent.toLowerCase();
+        const tags = Array.from(article.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+
+        if (title.includes(searchTerm) || summary.includes(searchTerm) || tags.includes(searchTerm)) {
+            article.style.display = 'block';
+        } else {
+            article.style.display = 'none';
+        }
+    });
+});
+</script>
+
+</body>
+</html>

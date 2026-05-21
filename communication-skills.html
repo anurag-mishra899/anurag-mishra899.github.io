@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Skills - AI Knowledge Base</title>
+    <meta name="description" content="Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure">
+    <link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+<div class="breadcrumb">
+    <a href="/">Home</a>
+    <span>›</span>
+    <span>Communication Skills</span>
+</div>
+
+<div class="hero" style="padding: 2rem 0;">
+    <h1>Communication Skills</h1>
+    <p>Guidance and resources on effective public speaking, presentations, and audience engagement.</p>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Articles</div>
+        </div>
+    </div>
+</div>
+
+<div class="search-container">
+    <input type="text" id="searchBox" class="search-box" placeholder="Search in Communication Skills...">
+</div>
+
+<div class="articles-grid">
+    
+    <a href="/articles/the-video-how-to-speak-provides-guidance-on-effective-public-speaking-techniques-it-covers-strate.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">YouTube Video</span>
+            <span>2026-03-29</span>
+            
+            <span>Shared by Anurag Mishra</span>
+            
+        </div>
+        <h3>The video "How to Speak" provides guidance on effective public speaking techniques. It covers strategies to improve communication skills, engage audie</h3>
+        <p class="summary">The video "How to Speak" provides guidance on effective public speaking techniques. It covers strategies to improve communication skills, engage audiences, and deliver impactful presentations.</p>
+        <div class="article-tags">
+            
+            <span class="tag">public speaking</span>
+            
+            <span class="tag">communication skills</span>
+            
+            <span class="tag">presentations</span>
+            
+            <span class="tag">audience engagement</span>
+            
+        </div>
+    </a>
+    
+    <a href="/articles/the-video-how-to-speak-provides-guidance-on-effective-communication-and-public-speaking-skills-it.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">YouTube Video</span>
+            <span>2026-03-29</span>
+            
+            <span>Shared by Anurag Mishra</span>
+            
+        </div>
+        <h3>The video "How to Speak" provides guidance on effective communication and public speaking skills. It covers techniques and strategies to improve clari</h3>
+        <p class="summary">The video "How to Speak" provides guidance on effective communication and public speaking skills. It covers techniques and strategies to improve clarity, engagement, and confidence when speaking in front of an audience.</p>
+        <div class="article-tags">
+            
+            <span class="tag">public speaking</span>
+            
+            <span class="tag">communication skills</span>
+            
+            <span class="tag">presentation techniques</span>
+            
+            <span class="tag">confidence</span>
+            
+            <span class="tag">audience engagement</span>
+            
+        </div>
+    </a>
+    
+    <a href="/articles/the-video-how-to-speak-provides-guidance-on-effective-public-speaking-including-tips-on-voice-mod.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">YouTube Video</span>
+            <span>2026-03-29</span>
+            
+            <span>Shared by Anurag Mishra</span>
+            
+        </div>
+        <h3>The video "How to Speak" provides guidance on effective public speaking, including tips on voice modulation, body language, and engaging an audience. </h3>
+        <p class="summary">The video "How to Speak" provides guidance on effective public speaking, including tips on voice modulation, body language, and engaging an audience. It aims to help viewers improve their communication skills for presentations and speeches.</p>
+        <div class="article-tags">
+            
+            <span class="tag">public speaking</span>
+            
+            <span class="tag">communication skills</span>
+            
+            <span class="tag">presentations</span>
+            
+            <span class="tag">voice modulation</span>
+            
+            <span class="tag">body language</span>
+            
+        </div>
+    </a>
+    
+</div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+    
+<script>
+document.getElementById('searchBox').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const articles = document.querySelectorAll('.article-card');
+
+    articles.forEach(article => {
+        const title = article.querySelector('h3').textContent.toLowerCase();
+        const summary = article.querySelector('.summary').textContent.toLowerCase();
+        const tags = Array.from(article.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+
+        if (title.includes(searchTerm) || summary.includes(searchTerm) || tags.includes(searchTerm)) {
+            article.style.display = 'block';
+        } else {
+            article.style.display = 'none';
+        }
+    });
+});
+</script>
+
+</body>
+</html>

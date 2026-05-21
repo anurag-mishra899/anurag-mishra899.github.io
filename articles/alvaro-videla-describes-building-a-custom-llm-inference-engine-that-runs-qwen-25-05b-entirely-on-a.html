@@ -53,14 +53,12 @@
 
     <div class="article-content">
         <h2>Summary</h2>
-        <p>Alvaro Videla describes building a custom LLM inference engine that runs Qwen 2.5-0.5B entirely on Apple’s Neural Engine (ANE), achieving 171 tokens/second with the GPU idle. By reshaping transformer operations as 1x1 convolutions, leveraging CoreML’s MLState API, and optimizing memory usage, he achieved a 19× speedup over the baseline, demonstrating efficient LLM inference on Apple Silicon.</p>
+        <p>Alvaro Videla describes building a custom LLM inference engine that runs Qwen 2.5-0.5B entirely on Apple’s Neural Engine (ANE), achieving 171 tokens/second by leveraging the ANE’s convolution capabilities and optimizing data flow using CoreML’s MLState API. The approach involves reshaping transformer operations as 1x1 convolutions, eliminating memory bottlenecks, and using Python, coremltools, and Swift for the stack.</p>
 
         <h2>Key Topics</h2>
         <div class="article-tags">
             
             <span class="tag">LLM</span>
-            
-            <span class="tag">inference engine</span>
             
             <span class="tag">Apple Neural Engine</span>
             
@@ -68,19 +66,21 @@
             
             <span class="tag">Qwen</span>
             
-            <span class="tag">transformer</span>
+            <span class="tag">inference engine</span>
             
             <span class="tag">convolution</span>
             
-            <span class="tag">Swift</span>
-            
             <span class="tag">Python</span>
+            
+            <span class="tag">coremltools</span>
+            
+            <span class="tag">Swift</span>
             
             <span class="tag">quantization</span>
             
-            <span class="tag">Apple Silicon</span>
-            
             <span class="tag">model optimization</span>
+            
+            <span class="tag">Apple Silicon</span>
             
         </div>
 
@@ -108,13 +108,13 @@
                 <p class="summary">Aayush Garg details his implementation of GRPO (Guided Reinforcement Policy Optimization) from scratch, focusing on training the Qwen 2.5-Math-1.5B model using pure reinforcement learning and conducting extensive ablation studies to understand the impact of various training choices. He shares insights on experiment optimizations, cost-effective cloud training with Modal, and provides public access to all code, configs, checkpoints, and logs.</p>
             </a>
             
-            <a href="../articles/aayush-garg-implemented-grpo-guided-reinforcement-policy-optimization-training-from-scratch-focus.html" class="article-card">
+            <a href="../articles/aayush-garg-details-his-implementation-of-grpo-guided-reward-policy-optimization-from-scratch-foc.html" class="article-card">
                 <div class="article-meta">
                     <span class="article-type">LinkedIn Article/Post</span>
                     <span>2026-02-27</span>
                 </div>
-                <h3>Aayush Garg implemented GRPO (Guided Reinforcement Policy Optimization) training from scratch, focusing on understanding the method through extensive </h3>
-                <p class="summary">Aayush Garg implemented GRPO (Guided Reinforcement Policy Optimization) training from scratch, focusing on understanding the method through extensive ablation studies and optimizations. He trained the Qwen 2.5-Math-1.5B model using pure RL, achieving a significant accuracy boost on the MATH validation set, and shared all code, configs, and logs publicly for reproducibility.</p>
+                <h3>Aayush Garg details his implementation of GRPO (Guided Reward Policy Optimization) from scratch, focusing on running extensive ablation studies to und</h3>
+                <p class="summary">Aayush Garg details his implementation of GRPO (Guided Reward Policy Optimization) from scratch, focusing on running extensive ablation studies to understand the effects of various training design choices. He trained the Qwen 2.5-Math-1.5B model using pure reinforcement learning, achieving a significant accuracy boost, and optimized the workflow to run efficiently on a single GPU and on Modal cloud GPUs, sharing all code and results publicly.</p>
             </a>
             
         </div>
