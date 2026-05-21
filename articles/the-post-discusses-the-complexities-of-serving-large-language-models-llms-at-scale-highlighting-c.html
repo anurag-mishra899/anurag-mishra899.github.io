@@ -53,32 +53,28 @@
 
     <div class="article-content">
         <h2>Summary</h2>
-        <p>The post discusses the complexities of serving large language models (LLMs) at scale, highlighting challenges such as non-deterministic outputs, sequential token generation, and distinct resource requirements during inference. It emphasizes that LLM inference is constrained more by memory than compute, with shifting resource profiles within a single request, and points to ongoing issues like non-determinism and GPU memory management. The post references frameworks and articles addressing these challenges, such as vLLM, SGLang, and work by Thinking Machines.</p>
+        <p>The post discusses the complexities of serving large language models (LLMs) at scale, highlighting challenges such as non-deterministic outputs, sequential autoregressive token generation, and shifting resource constraints between compute and memory. It emphasizes that LLM inference is fundamentally different from conventional API serving due to factors like GPU memory limitations, the need for multi-GPU setups, and the growing KV cache with concurrent users. The post also references frameworks and articles that address these challenges, including issues around inference determinism.</p>
 
         <h2>Key Topics</h2>
         <div class="article-tags">
             
             <span class="tag">LLM inference</span>
             
-            <span class="tag">API serving</span>
-            
-            <span class="tag">autoregressive token generation</span>
-            
-            <span class="tag">prefill and decode phases</span>
+            <span class="tag">autoregressive generation</span>
             
             <span class="tag">GPU memory management</span>
             
-            <span class="tag">non-determinism</span>
-            
             <span class="tag">KV cache</span>
             
-            <span class="tag">multi-GPU</span>
+            <span class="tag">multi-GPU serving</span>
+            
+            <span class="tag">non-determinism</span>
+            
+            <span class="tag">model serving frameworks</span>
             
             <span class="tag">vLLM</span>
             
             <span class="tag">SGLang</span>
-            
-            <span class="tag">Thinking Machines</span>
             
         </div>
 
@@ -97,6 +93,15 @@
                 <p class="summary">The post critiques the hype around vLLM for LLM inference, arguing that many influencers promote it without understanding inference engine internals. It explains that while vLLM excels at high-concurrency, single-turn workloads, SGLang is significantly faster for agentic, multi-turn, or prefix-reuse scenarios due to its RadixAttention caching. The author provides a practical decision matrix for choosing between inference engines based on workload characteristics.</p>
             </a>
             
+            <a href="../articles/the-post-critiques-the-hype-around-vllm-for-llm-inference-emphasizing-that-many-influencers-recomme.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-27</span>
+                </div>
+                <h3>The post critiques the hype around vLLM for LLM inference, emphasizing that many influencers recommend it without understanding how inference engines </h3>
+                <p class="summary">The post critiques the hype around vLLM for LLM inference, emphasizing that many influencers recommend it without understanding how inference engines work. It explains that while vLLM excels at high concurrency and single-turn workloads, SGLang offers significantly lower time-to-first-token (TTFT) for agentic, multi-turn, or prefix-reuse scenarios due to its superior caching mechanism. The author advises engineers to choose inference engines based on actual workload characteristics rather than popularity.</p>
+            </a>
+            
             <a href="../articles/the-post-explains-why-high-cpu-usage-alongside-lower-gpu-utilization-is-common-during-vllm-based-llm.html" class="article-card">
                 <div class="article-meta">
                     <span class="article-type">LinkedIn Article/Post</span>
@@ -104,15 +109,6 @@
                 </div>
                 <h3>The post explains why high CPU usage alongside lower GPU utilization is common during vLLM-based LLM inference. It highlights that while the GPU handl</h3>
                 <p class="summary">The post explains why high CPU usage alongside lower GPU utilization is common during vLLM-based LLM inference. It highlights that while the GPU handles compute-heavy tasks during the "Prefill" phase, the "Decode" phase is often memory-bound, and the CPU is heavily involved in orchestration tasks such as scheduling, tokenization, and sampling, as well as handling Python and async overhead from frameworks like FastAPI. Understanding these behaviors is crucial for optimizing infrastructure and throughput in LLM deployments.</p>
-            </a>
-            
-            <a href="../articles/the-post-critiques-the-hype-around-vllm-especially-among-influencers-who-may-not-understand-inferen.html" class="article-card">
-                <div class="article-meta">
-                    <span class="article-type">LinkedIn Article/Post</span>
-                    <span>2026-03-01</span>
-                </div>
-                <h3>The post critiques the hype around vLLM, especially among influencers who may not understand inference engines deeply, and provides a practical decisi</h3>
-                <p class="summary">The post critiques the hype around vLLM, especially among influencers who may not understand inference engines deeply, and provides a practical decision matrix for choosing between vLLM and SGLang based on workload characteristics. It highlights that SGLang outperforms vLLM for agentic, multi-turn, and prefix-reuse-heavy workloads due to its RadixAttention caching, while vLLM excels at high-concurrency, single-turn scenarios with its PagedAttention and batching. The key takeaway is to select your inference engine based on the specific needs of your workload, not popularity.</p>
             </a>
             
         </div>

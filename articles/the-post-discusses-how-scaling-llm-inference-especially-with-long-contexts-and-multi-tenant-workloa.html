@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The post discusses how scaling LLM inference, especially with long contexts and multi-tenant workloads, has shifted the KV cache challenge from being  - AI Knowledge Base</title>
+    <meta name="description" content="Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure">
+    <link rel="stylesheet" href="../static/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+<div class="breadcrumb">
+    <a href="../">Home</a>
+    <span>›</span>
+    <a href="../llm-inference-serving.html">LLM Inference & Serving</a>
+    <span>›</span>
+    <span>The post discusses how scaling LLM inference, especially with long contexts and multi-tenant workloads, has shifted the KV cache challenge from being </span>
+</div>
+
+<article>
+    <div class="article-header">
+        <h1>The post discusses how scaling LLM inference, especially with long contexts and multi-tenant workloads, has shifted the KV cache challenge from being </h1>
+        <div class="meta">
+            <span class="article-type">LinkedIn Article/Post</span>
+            <span>📅 2026-03-03</span>
+            
+            <span>👤 Shared by Anurag Mishra</span>
+            
+            <span>🏷️ LLM Inference & Serving</span>
+        </div>
+    </div>
+
+    
+
+    <div class="source-card">
+        <strong>📎 Original Source:</strong><br>
+        <a href="https://www.linkedin.com/posts/vincent-hsu-b719b48_kv-cache-is-no-longer-just-a-gpu-memory-concern-share-7432133739360632832-5ykF?utm_source=share&utm_medium=member_ios&rcm=ACoAABjhTGgBfcORudLuR1yY-QnmR8xfIw2dgSs" target="_blank" rel="noopener noreferrer" class="source-url">https://www.linkedin.com/posts/vincent-hsu-b719b48_kv-cache-is-no-longer-just-a-gpu-memory-concern-share-7432133739360632832-5ykF?utm_source=share&utm_medium=member_ios&rcm=ACoAABjhTGgBfcORudLuR1yY-QnmR8xfIw2dgSs</a>
+    </div>
+
+    <div class="article-content">
+        <h2>Summary</h2>
+        <p>The post discusses how scaling LLM inference, especially with long contexts and multi-tenant workloads, has shifted the KV cache challenge from being solely a GPU memory concern to a broader storage problem. It highlights the need for storage-backed KV cache management to enable scalable, cost-efficient inference, and explores technologies like IBM Fusion that facilitate efficient offloading, sharing, and retrieval of KV data across nodes.</p>
+
+        <h2>Key Topics</h2>
+        <div class="article-tags">
+            
+            <span class="tag">LLM inference</span>
+            
+            <span class="tag">KV cache</span>
+            
+            <span class="tag">GPU memory</span>
+            
+            <span class="tag">storage</span>
+            
+            <span class="tag">IBM Fusion</span>
+            
+            <span class="tag">Storage Scale</span>
+            
+            <span class="tag">RDMA</span>
+            
+            <span class="tag">RAG</span>
+            
+            <span class="tag">Paged Attention</span>
+            
+            <span class="tag">vLLM</span>
+            
+            <span class="tag">token economics</span>
+            
+        </div>
+
+        
+
+        
+        <h2>Related Articles</h2>
+        <div class="articles-grid">
+            
+            <a href="../articles/the-post-critiques-the-hype-around-vllm-for-llm-inference-arguing-that-many-influencers-promote-it.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-27</span>
+                </div>
+                <h3>The post critiques the hype around vLLM for LLM inference, arguing that many influencers promote it without understanding inference engine internals. </h3>
+                <p class="summary">The post critiques the hype around vLLM for LLM inference, arguing that many influencers promote it without understanding inference engine internals. It explains that while vLLM excels at high-concurrency, single-turn workloads, SGLang is significantly faster for agentic, multi-turn, or prefix-reuse scenarios due to its RadixAttention caching. The author provides a practical decision matrix for choosing between inference engines based on workload characteristics.</p>
+            </a>
+            
+            <a href="../articles/the-post-critiques-the-hype-around-vllm-for-llm-inference-emphasizing-that-many-influencers-recomme.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-27</span>
+                </div>
+                <h3>The post critiques the hype around vLLM for LLM inference, emphasizing that many influencers recommend it without understanding how inference engines </h3>
+                <p class="summary">The post critiques the hype around vLLM for LLM inference, emphasizing that many influencers recommend it without understanding how inference engines work. It explains that while vLLM excels at high concurrency and single-turn workloads, SGLang offers significantly lower time-to-first-token (TTFT) for agentic, multi-turn, or prefix-reuse scenarios due to its superior caching mechanism. The author advises engineers to choose inference engines based on actual workload characteristics rather than popularity.</p>
+            </a>
+            
+            <a href="../articles/the-post-explains-why-high-cpu-usage-alongside-lower-gpu-utilization-is-common-during-vllm-based-llm.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-28</span>
+                </div>
+                <h3>The post explains why high CPU usage alongside lower GPU utilization is common during vLLM-based LLM inference. It highlights that while the GPU handl</h3>
+                <p class="summary">The post explains why high CPU usage alongside lower GPU utilization is common during vLLM-based LLM inference. It highlights that while the GPU handles compute-heavy tasks during the "Prefill" phase, the "Decode" phase is often memory-bound, and the CPU is heavily involved in orchestration tasks such as scheduling, tokenization, and sampling, as well as handling Python and async overhead from frameworks like FastAPI. Understanding these behaviors is crucial for optimizing infrastructure and throughput in LLM deployments.</p>
+            </a>
+            
+        </div>
+        
+    </div>
+</article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+    
+</body>
+</html>

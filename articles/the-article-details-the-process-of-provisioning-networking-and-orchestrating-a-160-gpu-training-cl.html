@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The article details the process of provisioning, networking, and orchestrating a 160-GPU training cluster on AWS using AWS Batch, focusing on the infr - AI Knowledge Base</title>
+    <title>The article details the process of provisioning, networking, and orchestrating a 160-GPU training cluster on AWS using 20 p5.48xlarge nodes, focusing  - AI Knowledge Base</title>
     <meta name="description" content="Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure">
     <link rel="stylesheet" href="../static/css/style.css">
     
@@ -26,21 +26,21 @@
 <div class="breadcrumb">
     <a href="../">Home</a>
     <span>›</span>
-    <a href="../gpu-computing-hardware.html">GPU Computing & Hardware</a>
+    <a href="../tools-infrastructure.html">Tools & Infrastructure</a>
     <span>›</span>
-    <span>The article details the process of provisioning, networking, and orchestrating a 160-GPU training cluster on AWS using AWS Batch, focusing on the infr</span>
+    <span>The article details the process of provisioning, networking, and orchestrating a 160-GPU training cluster on AWS using 20 p5.48xlarge nodes, focusing </span>
 </div>
 
 <article>
     <div class="article-header">
-        <h1>The article details the process of provisioning, networking, and orchestrating a 160-GPU training cluster on AWS using AWS Batch, focusing on the infr</h1>
+        <h1>The article details the process of provisioning, networking, and orchestrating a 160-GPU training cluster on AWS using 20 p5.48xlarge nodes, focusing </h1>
         <div class="meta">
             <span class="article-type">Web Article</span>
             <span>📅 2026-03-12</span>
             
             <span>👤 Shared by Anurag Mishra</span>
             
-            <span>🏷️ GPU Computing & Hardware</span>
+            <span>🏷️ Tools & Infrastructure</span>
         </div>
     </div>
 
@@ -53,7 +53,7 @@
 
     <div class="article-content">
         <h2>Summary</h2>
-        <p>The article details the process of provisioning, networking, and orchestrating a 160-GPU training cluster on AWS using AWS Batch, focusing on the infrastructure setup required before distributed training can begin. It explains the hardware architecture, orchestration choices, manual configuration of networking (EFA/NCCL), and the construction of a GPU-ready Docker environment, highlighting operational challenges and solutions like custom synchronization barriers.</p>
+        <p>The article details the process of provisioning, networking, and orchestrating a 160-GPU training cluster on AWS using 20 p5.48xlarge nodes, focusing on the infrastructure setup required before distributed training can begin. It discusses the choice of AWS Batch as the orchestrator due to hardware availability, the complexities of configuring networking (especially EFA and NCCL), and the construction of a Docker-based GPU-ready environment.</p>
 
         <h2>Key Topics</h2>
         <div class="article-tags">
@@ -62,7 +62,7 @@
             
             <span class="tag">GPU cluster</span>
             
-            <span class="tag">distributed training</span>
+            <span class="tag">p5.48xlarge</span>
             
             <span class="tag">NVIDIA H100</span>
             
@@ -74,15 +74,13 @@
             
             <span class="tag">PyTorch</span>
             
+            <span class="tag">distributed training</span>
+            
+            <span class="tag">Ray Train</span>
+            
             <span class="tag">SageMaker</span>
             
-            <span class="tag">Ray</span>
-            
-            <span class="tag">NVSwitch</span>
-            
             <span class="tag">ML infrastructure</span>
-            
-            <span class="tag">synchronization barriers</span>
             
         </div>
 
@@ -92,31 +90,31 @@
         <h2>Related Articles</h2>
         <div class="articles-grid">
             
-            <a href="../articles/gautam-ramachandra-built-a-gpu-compiler-from-scratch-that-compiles-a-c-like-kernel-language-down-to.html" class="article-card">
+            <a href="../articles/the-article-introduces-kubernetes-to-ai-engineers-emphasizing-its-importance-in-orchestrating-and-m.html" class="article-card">
                 <div class="article-meta">
-                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span class="article-type">Medium Article</span>
                     <span>2026-02-27</span>
                 </div>
-                <h3>Gautam Ramachandra built a GPU compiler from scratch that compiles a C-like kernel language down to 16-bit binary instructions for a real, open-source</h3>
-                <p class="summary">Gautam Ramachandra built a GPU compiler from scratch that compiles a C-like kernel language down to 16-bit binary instructions for a real, open-source Verilog-based GPU architecture. The project features a full compilation pipeline, an interactive web visualizer for real-time execution, and implements advanced compiler techniques, making the hardware-software boundary transparent for educational and experimental purposes.</p>
+                <h3>The article introduces Kubernetes to AI engineers, emphasizing its importance in orchestrating and managing containerized resources for deploying agen</h3>
+                <p class="summary">The article introduces Kubernetes to AI engineers, emphasizing its importance in orchestrating and managing containerized resources for deploying agentic AI systems in production. It explains Kubernetes' core components, such as the control plane and workload objects, and provides a brief guide to setting up a local Kubernetes cluster using Docker, Minikube, and Kubectl.</p>
             </a>
             
-            <a href="../articles/the-post-discusses-real-world-benchmarking-of-the-gpt-oss-120b-large-language-model-in-production-en.html" class="article-card">
+            <a href="../articles/the-article-introduces-kubernetes-for-ai-engineers-emphasizing-its-role-in-orchestrating-and-managi.html" class="article-card">
                 <div class="article-meta">
-                    <span class="article-type">LinkedIn Article/Post</span>
-                    <span>2026-02-28</span>
-                </div>
-                <h3>The post discusses real-world benchmarking of the GPT-OSS-120B large language model in production environments, highlighting how traditional benchmark</h3>
-                <p class="summary">The post discusses real-world benchmarking of the GPT-OSS-120B large language model in production environments, highlighting how traditional benchmarks often miss practical failure points under high concurrency. Using KServe, vLLM, and an NVIDIA H100 GPU, the author details how system performance degrades with increasing concurrent requests and emphasizes that many benchmark failures stem from load-generator instability rather than model limitations.</p>
-            </a>
-            
-            <a href="../articles/gautam-ramachandra-built-a-gpu-compiler-from-scratch-that-compiles-a-c-like-kernel-language-down-to.html" class="article-card">
-                <div class="article-meta">
-                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span class="article-type">Medium Article</span>
                     <span>2026-03-01</span>
                 </div>
-                <h3>Gautam Ramachandra built a GPU compiler from scratch that compiles a C-like kernel language down to 16-bit binary instructions for a real, open-source</h3>
-                <p class="summary">Gautam Ramachandra built a GPU compiler from scratch that compiles a C-like kernel language down to 16-bit binary instructions for a real, open-source Verilog GPU architecture, with the entire compilation and execution pipeline visualized in real-time in the browser. The project demonstrates advanced compiler techniques and provides an interactive environment for understanding the full path from source code to hardware execution.</p>
+                <h3>The article introduces Kubernetes for AI engineers, emphasizing its role in orchestrating and managing containerized resources in modern agentic AI sy</h3>
+                <p class="summary">The article introduces Kubernetes for AI engineers, emphasizing its role in orchestrating and managing containerized resources in modern agentic AI systems. It explains Kubernetes' core components, such as the control plane and workload objects, and provides basic setup instructions for running a local Kubernetes cluster using Docker, Minikube, and Kubectl.</p>
+            </a>
+            
+            <a href="../articles/liteparse-is-a-fast-open-source-standalone-document-parser-focused-on-local-pdf-and-image-parsing.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">GitHub Repository</span>
+                    <span>2026-03-20</span>
+                </div>
+                <h3>LiteParse is a fast, open-source, standalone document parser focused on local PDF and image parsing, offering spatial text extraction with bounding bo</h3>
+                <p class="summary">LiteParse is a fast, open-source, standalone document parser focused on local PDF and image parsing, offering spatial text extraction with bounding boxes and built-in OCR using Tesseract.js. It supports multiple output formats, batch processing, screenshot generation, and can be used via CLI or as a library in Node.js projects, without requiring cloud dependencies.</p>
             </a>
             
         </div>

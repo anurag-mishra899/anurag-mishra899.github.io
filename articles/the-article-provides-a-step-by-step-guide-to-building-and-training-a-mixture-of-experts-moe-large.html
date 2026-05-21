@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The article provides a step-by-step guide to building and training a Mixture-of-Experts (MoE) large language model (LLM) from scratch using PyTorch. I - AI Knowledge Base</title>
+    <title>The article provides a step-by-step guide to building and training a Mixture-of-Experts (MoE) large language model (LLM) from scratch, including data  - AI Knowledge Base</title>
     <meta name="description" content="Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure">
     <link rel="stylesheet" href="../static/css/style.css">
     
@@ -26,21 +26,21 @@
 <div class="breadcrumb">
     <a href="../">Home</a>
     <span>›</span>
-    <a href="../llm-training-finetuning.html">LLM Training & Fine-tuning</a>
+    <a href="../model-architectures.html">Model Architectures</a>
     <span>›</span>
-    <span>The article provides a step-by-step guide to building and training a Mixture-of-Experts (MoE) large language model (LLM) from scratch using PyTorch. I</span>
+    <span>The article provides a step-by-step guide to building and training a Mixture-of-Experts (MoE) large language model (LLM) from scratch, including data </span>
 </div>
 
 <article>
     <div class="article-header">
-        <h1>The article provides a step-by-step guide to building and training a Mixture-of-Experts (MoE) large language model (LLM) from scratch using PyTorch. I</h1>
+        <h1>The article provides a step-by-step guide to building and training a Mixture-of-Experts (MoE) large language model (LLM) from scratch, including data </h1>
         <div class="meta">
             <span class="article-type">Web Article</span>
             <span>📅 2026-03-20</span>
             
             <span>👤 Shared by Anurag Mishra</span>
             
-            <span>🏷️ LLM Training & Fine-tuning</span>
+            <span>🏷️ Model Architectures</span>
         </div>
     </div>
 
@@ -53,26 +53,28 @@
 
     <div class="article-content">
         <h2>Summary</h2>
-        <p>The article provides a step-by-step guide to building and training a Mixture-of-Experts (MoE) large language model (LLM) from scratch using PyTorch. It covers data preparation with the WikiText dataset, text cleaning, tokenization with Tiktoken, and dataset creation for language modeling.</p>
+        <p>The article provides a step-by-step guide to building and training a Mixture-of-Experts (MoE) large language model (LLM) from scratch, including data preparation, cleaning, tokenization, and dataset creation using PyTorch and Tiktoken. It uses the WikiText-103 dataset and demonstrates how to implement a custom dataset class for language modeling tasks.</p>
 
         <h2>Key Topics</h2>
         <div class="article-tags">
             
-            <span class="tag">Mixture-of-Experts</span>
+            <span class="tag">Mixture-of-Experts (MoE)</span>
             
-            <span class="tag">LLM</span>
+            <span class="tag">large language models (LLM)</span>
             
             <span class="tag">PyTorch</span>
             
-            <span class="tag">WikiText</span>
+            <span class="tag">WikiText-103</span>
             
             <span class="tag">Tiktoken</span>
             
-            <span class="tag">tokenization</span>
+            <span class="tag">tokenizer</span>
             
             <span class="tag">dataset preparation</span>
             
             <span class="tag">language modeling</span>
+            
+            <span class="tag">Grouped Query Attention (GQA)</span>
             
         </div>
 
@@ -82,31 +84,31 @@
         <h2>Related Articles</h2>
         <div class="articles-grid">
             
-            <a href="../articles/aayush-garg-details-his-implementation-of-grpo-guided-reinforcement-policy-optimization-from-scrat.html" class="article-card">
+            <a href="../articles/the-post-introduces-the-qwen3-vl-video-grounding-demo-a-vision-language-model-that-enables-text-gui.html" class="article-card">
                 <div class="article-meta">
                     <span class="article-type">LinkedIn Article/Post</span>
                     <span>2026-02-27</span>
                 </div>
-                <h3>Aayush Garg details his implementation of GRPO (Guided Reinforcement Policy Optimization) from scratch, focusing on training the Qwen 2.5-Math-1.5B mo</h3>
-                <p class="summary">Aayush Garg details his implementation of GRPO (Guided Reinforcement Policy Optimization) from scratch, focusing on training the Qwen 2.5-Math-1.5B model using pure reinforcement learning and conducting extensive ablation studies to understand the impact of various training choices. He shares insights on experiment optimizations, cost-effective cloud training with Modal, and provides public access to all code, configs, checkpoints, and logs.</p>
+                <h3>The post introduces the Qwen3-VL-Video-Grounding demo, a vision-language model that enables text-guided object tracking, point detection, and video qu</h3>
+                <p class="summary">The post introduces the Qwen3-VL-Video-Grounding demo, a vision-language model that enables text-guided object tracking, point detection, and video question answering. It highlights the model's technical approach, including two-pass object matching (IoU and center-distance), and describes its practical workflow for tracking objects and points in video using user-provided text prompts.</p>
             </a>
             
-            <a href="../articles/the-article-details-a-production-scale-architecture-for-training-a-7b-vision-language-model-on-20-t.html" class="article-card">
-                <div class="article-meta">
-                    <span class="article-type">Web Article</span>
-                    <span>2026-02-27</span>
-                </div>
-                <h3>The article details a production-scale architecture for training a 7B vision-language model on 20+ TB of multimodal data using 160 GPUs, leveraging Mo</h3>
-                <p class="summary">The article details a production-scale architecture for training a 7B vision-language model on 20+ TB of multimodal data using 160 GPUs, leveraging MosaicML Streaming (MDS) to efficiently stream and cache data from S3 without downloading the full dataset. It explains how MDS transforms high-latency cloud storage access into high-throughput, deterministic data delivery, and describes the use of decoupled pipelines for tokenization, training, and validation to ensure operational resilience and fault tolerance.</p>
-            </a>
-            
-            <a href="../articles/aayush-garg-describes-implementing-grpo-generalized-reinforcement-policy-optimization-from-scratch.html" class="article-card">
+            <a href="../articles/the-post-introduces-the-qwen3-vl-video-grounding-demo-which-enables-text-guided-object-tracking-po.html" class="article-card">
                 <div class="article-meta">
                     <span class="article-type">LinkedIn Article/Post</span>
                     <span>2026-02-27</span>
                 </div>
-                <h3>Aayush Garg describes implementing GRPO (Generalized Reinforcement Policy Optimization) from scratch, focusing on training the Qwen 2.5-Math-1.5B mode</h3>
-                <p class="summary">Aayush Garg describes implementing GRPO (Generalized Reinforcement Policy Optimization) from scratch, focusing on training the Qwen 2.5-Math-1.5B model using pure reinforcement learning and conducting extensive ablation studies to understand the impact of different training choices. He shares insights on experiment setup, optimizations for running on a single RTX 4090 GPU, and cost-effective parallel runs using Modal, with all code and logs made publicly available.</p>
+                <h3>The post introduces the Qwen3-VL-Video-Grounding demo, which enables text-guided object tracking, point detection, and video question answering using </h3>
+                <p class="summary">The post introduces the Qwen3-VL-Video-Grounding demo, which enables text-guided object tracking, point detection, and video question answering using the Qwen3-VL-4B vision-language model. It highlights features such as bounding box detection, cross-frame object matching, and a two-pass tracking strategy for robust handling of occlusions and fast-moving objects.</p>
+            </a>
+            
+            <a href="../articles/the-post-introduces-the-qwen3-vl-video-grounding-demo-a-tool-that-enables-text-guided-object-tracki.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-03-01</span>
+                </div>
+                <h3>The post introduces the Qwen3-VL-Video-Grounding Demo, a tool that enables text-guided object tracking, point detection, and video question answering </h3>
+                <p class="summary">The post introduces the Qwen3-VL-Video-Grounding Demo, a tool that enables text-guided object tracking, point detection, and video question answering using the Qwen3-VL-4B vision-language model. It highlights features like bounding box detection, cross-frame object matching, and a two-pass matching strategy for robust tracking, even under occlusion or fast motion.</p>
             </a>
             
         </div>

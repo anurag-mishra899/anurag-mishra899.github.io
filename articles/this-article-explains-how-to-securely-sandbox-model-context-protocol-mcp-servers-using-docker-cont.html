@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This article explains how to securely sandbox Model Context Protocol (MCP) servers using Docker containers, building on previous discussions about MCP - AI Knowledge Base</title>
+    <title>This article explains how to securely sandbox Model Context Protocol (MCP) servers using Docker containers. It covers the benefits of containerization - AI Knowledge Base</title>
     <meta name="description" content="Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure">
     <link rel="stylesheet" href="../static/css/style.css">
     
@@ -28,12 +28,12 @@
     <span>›</span>
     <a href="../llm-inference-serving.html">LLM Inference & Serving</a>
     <span>›</span>
-    <span>This article explains how to securely sandbox Model Context Protocol (MCP) servers using Docker containers, building on previous discussions about MCP</span>
+    <span>This article explains how to securely sandbox Model Context Protocol (MCP) servers using Docker containers. It covers the benefits of containerization</span>
 </div>
 
 <article>
     <div class="article-header">
-        <h1>This article explains how to securely sandbox Model Context Protocol (MCP) servers using Docker containers, building on previous discussions about MCP</h1>
+        <h1>This article explains how to securely sandbox Model Context Protocol (MCP) servers using Docker containers. It covers the benefits of containerization</h1>
         <div class="meta">
             <span class="article-type">Web Article</span>
             <span>📅 2026-03-22</span>
@@ -53,7 +53,7 @@
 
     <div class="article-content">
         <h2>Summary</h2>
-        <p>This article explains how to securely sandbox Model Context Protocol (MCP) servers using Docker containers, building on previous discussions about MCP security. It details the benefits of containerization—such as security isolation, resource limiting, and reproducible deployments—and provides guidance on creating and running Docker-sandboxed MCP servers for safer development and deployment.</p>
+        <p>This article explains how to securely sandbox Model Context Protocol (MCP) servers using Docker containers. It covers the benefits of containerization—including security isolation, environment consistency, and resource control—and provides guidance on building and running Docker-sandboxed MCP servers for safer deployment and development.</p>
 
         <h2>Key Topics</h2>
         <div class="article-tags">
@@ -93,6 +93,15 @@
                 <p class="summary">The post critiques the hype around vLLM for LLM inference, arguing that many influencers promote it without understanding inference engine internals. It explains that while vLLM excels at high-concurrency, single-turn workloads, SGLang is significantly faster for agentic, multi-turn, or prefix-reuse scenarios due to its RadixAttention caching. The author provides a practical decision matrix for choosing between inference engines based on workload characteristics.</p>
             </a>
             
+            <a href="../articles/the-post-critiques-the-hype-around-vllm-for-llm-inference-emphasizing-that-many-influencers-recomme.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-27</span>
+                </div>
+                <h3>The post critiques the hype around vLLM for LLM inference, emphasizing that many influencers recommend it without understanding how inference engines </h3>
+                <p class="summary">The post critiques the hype around vLLM for LLM inference, emphasizing that many influencers recommend it without understanding how inference engines work. It explains that while vLLM excels at high concurrency and single-turn workloads, SGLang offers significantly lower time-to-first-token (TTFT) for agentic, multi-turn, or prefix-reuse scenarios due to its superior caching mechanism. The author advises engineers to choose inference engines based on actual workload characteristics rather than popularity.</p>
+            </a>
+            
             <a href="../articles/the-post-explains-why-high-cpu-usage-alongside-lower-gpu-utilization-is-common-during-vllm-based-llm.html" class="article-card">
                 <div class="article-meta">
                     <span class="article-type">LinkedIn Article/Post</span>
@@ -100,15 +109,6 @@
                 </div>
                 <h3>The post explains why high CPU usage alongside lower GPU utilization is common during vLLM-based LLM inference. It highlights that while the GPU handl</h3>
                 <p class="summary">The post explains why high CPU usage alongside lower GPU utilization is common during vLLM-based LLM inference. It highlights that while the GPU handles compute-heavy tasks during the "Prefill" phase, the "Decode" phase is often memory-bound, and the CPU is heavily involved in orchestration tasks such as scheduling, tokenization, and sampling, as well as handling Python and async overhead from frameworks like FastAPI. Understanding these behaviors is crucial for optimizing infrastructure and throughput in LLM deployments.</p>
-            </a>
-            
-            <a href="../articles/the-post-critiques-the-hype-around-vllm-especially-among-influencers-who-may-not-understand-inferen.html" class="article-card">
-                <div class="article-meta">
-                    <span class="article-type">LinkedIn Article/Post</span>
-                    <span>2026-03-01</span>
-                </div>
-                <h3>The post critiques the hype around vLLM, especially among influencers who may not understand inference engines deeply, and provides a practical decisi</h3>
-                <p class="summary">The post critiques the hype around vLLM, especially among influencers who may not understand inference engines deeply, and provides a practical decision matrix for choosing between vLLM and SGLang based on workload characteristics. It highlights that SGLang outperforms vLLM for agentic, multi-turn, and prefix-reuse-heavy workloads due to its RadixAttention caching, while vLLM excels at high-concurrency, single-turn scenarios with its PagedAttention and batching. The key takeaway is to select your inference engine based on the specific needs of your workload, not popularity.</p>
             </a>
             
         </div>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This guide details how to deploy multiple AI models using vLLM on Azure Kubernetes Service (AKS) with NVIDIA H100 GPUs utilizing Multi-Instance GPU (M - AI Knowledge Base</title>
+    <meta name="description" content="Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure">
+    <link rel="stylesheet" href="../static/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+<div class="breadcrumb">
+    <a href="../">Home</a>
+    <span>›</span>
+    <a href="../gpu-computing-hardware.html">GPU Computing & Hardware</a>
+    <span>›</span>
+    <span>This guide details how to deploy multiple AI models using vLLM on Azure Kubernetes Service (AKS) with NVIDIA H100 GPUs utilizing Multi-Instance GPU (M</span>
+</div>
+
+<article>
+    <div class="article-header">
+        <h1>This guide details how to deploy multiple AI models using vLLM on Azure Kubernetes Service (AKS) with NVIDIA H100 GPUs utilizing Multi-Instance GPU (M</h1>
+        <div class="meta">
+            <span class="article-type">Web Article</span>
+            <span>📅 2026-03-20</span>
+            
+            <span>👤 Shared by Anurag Mishra</span>
+            
+            <span>🏷️ GPU Computing & Hardware</span>
+        </div>
+    </div>
+
+    
+
+    <div class="source-card">
+        <strong>📎 Original Source:</strong><br>
+        <a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/enterprise-aks-multi-instance-gpu-mig-vllm-deployment-guide/4450296" target="_blank" rel="noopener noreferrer" class="source-url">https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/enterprise-aks-multi-instance-gpu-mig-vllm-deployment-guide/4450296</a>
+    </div>
+
+    <div class="article-content">
+        <h2>Summary</h2>
+        <p>This guide details how to deploy multiple AI models using vLLM on Azure Kubernetes Service (AKS) with NVIDIA H100 GPUs utilizing Multi-Instance GPU (MIG) technology. It explains how to configure AKS, install GPU management tools, partition GPUs with MIG for hardware isolation, and deploy models efficiently, enabling cost-effective and scalable AI workloads in an enterprise environment.</p>
+
+        <h2>Key Topics</h2>
+        <div class="article-tags">
+            
+            <span class="tag">Azure Kubernetes Service (AKS)</span>
+            
+            <span class="tag">NVIDIA H100 GPU</span>
+            
+            <span class="tag">Multi-Instance GPU (MIG)</span>
+            
+            <span class="tag">vLLM</span>
+            
+            <span class="tag">GPU Operator</span>
+            
+            <span class="tag">Kubernetes</span>
+            
+            <span class="tag">AI model deployment</span>
+            
+            <span class="tag">Azure API Management (APIM)</span>
+            
+            <span class="tag">GPT-OSS</span>
+            
+            <span class="tag">Phi-4</span>
+            
+            <span class="tag">hybrid AI infrastructure</span>
+            
+        </div>
+
+        
+
+        
+        <h2>Related Articles</h2>
+        <div class="articles-grid">
+            
+            <a href="../articles/gautam-ramachandra-built-a-gpu-compiler-from-scratch-that-compiles-a-c-like-kernel-language-down-to.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-27</span>
+                </div>
+                <h3>Gautam Ramachandra built a GPU compiler from scratch that compiles a C-like kernel language down to 16-bit binary instructions for a real, open-source</h3>
+                <p class="summary">Gautam Ramachandra built a GPU compiler from scratch that compiles a C-like kernel language down to 16-bit binary instructions for a real, open-source Verilog-based GPU architecture. The project features a full compilation pipeline, an interactive web visualizer for real-time execution, and implements advanced compiler techniques, making the hardware-software boundary transparent for educational and experimental purposes.</p>
+            </a>
+            
+            <a href="../articles/gautam-ramachandra-built-a-gpu-compiler-from-scratch-that-compiles-a-c-like-kernel-language-down-to.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-27</span>
+                </div>
+                <h3>Gautam Ramachandra built a GPU compiler from scratch that compiles a C-like kernel language down to 16-bit binary instructions for an open-source Veri</h3>
+                <p class="summary">Gautam Ramachandra built a GPU compiler from scratch that compiles a C-like kernel language down to 16-bit binary instructions for an open-source Verilog GPU architecture, with an interactive web visualizer to observe real-time execution. The project demonstrates the full compiler pipeline, from source code through MLIR IR and register allocation to cycle-accurate simulation, making hardware-software interactions transparent and educational.</p>
+            </a>
+            
+            <a href="../articles/the-post-discusses-real-world-benchmarking-of-the-gpt-oss-120b-large-language-model-in-production-en.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-28</span>
+                </div>
+                <h3>The post discusses real-world benchmarking of the GPT-OSS-120B large language model in production environments, highlighting how traditional benchmark</h3>
+                <p class="summary">The post discusses real-world benchmarking of the GPT-OSS-120B large language model in production environments, highlighting how traditional benchmarks often miss practical failure points under high concurrency. Using KServe, vLLM, and an NVIDIA H100 GPU, the author details how system performance degrades with increasing concurrent requests and emphasizes that many benchmark failures stem from load-generator instability rather than model limitations.</p>
+            </a>
+            
+        </div>
+        
+    </div>
+</article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+    
+</body>
+</html>

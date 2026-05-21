@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The article explains Fully Sharded Data Parallelism (FSDP) in PyTorch, detailing how it enables efficient distributed training by sharding model param - AI Knowledge Base</title>
+    <meta name="description" content="Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure">
+    <link rel="stylesheet" href="../static/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+<div class="breadcrumb">
+    <a href="../">Home</a>
+    <span>›</span>
+    <a href="../llm-training-finetuning.html">LLM Training & Fine-tuning</a>
+    <span>›</span>
+    <span>The article explains Fully Sharded Data Parallelism (FSDP) in PyTorch, detailing how it enables efficient distributed training by sharding model param</span>
+</div>
+
+<article>
+    <div class="article-header">
+        <h1>The article explains Fully Sharded Data Parallelism (FSDP) in PyTorch, detailing how it enables efficient distributed training by sharding model param</h1>
+        <div class="meta">
+            <span class="article-type">Web Article</span>
+            <span>📅 2026-03-01</span>
+            
+            <span>👤 Shared by Anurag Mishra</span>
+            
+            <span>🏷️ LLM Training & Fine-tuning</span>
+        </div>
+    </div>
+
+    
+
+    <div class="source-card">
+        <strong>📎 Original Source:</strong><br>
+        <a href="https://debnsuma.github.io/my-blog/posts/fsdp-ray-train/" target="_blank" rel="noopener noreferrer" class="source-url">https://debnsuma.github.io/my-blog/posts/fsdp-ray-train/</a>
+    </div>
+
+    <div class="article-content">
+        <h2>Summary</h2>
+        <p>The article explains Fully Sharded Data Parallelism (FSDP) in PyTorch, detailing how it enables efficient distributed training by sharding model parameters, gradients, and optimizer states across multiple GPUs. It contrasts FSDP with naive pipeline parallelism, describes its two-dimensional splitting strategy (vertical partitioning and horizontal sharding), and demonstrates practical usage with PyTorch and Ray Train for training large models.</p>
+
+        <h2>Key Topics</h2>
+        <div class="article-tags">
+            
+            <span class="tag">FSDP</span>
+            
+            <span class="tag">PyTorch</span>
+            
+            <span class="tag">Ray Train</span>
+            
+            <span class="tag">distributed training</span>
+            
+            <span class="tag">ZeRO optimization</span>
+            
+            <span class="tag">GPU memory efficiency</span>
+            
+            <span class="tag">Vision Transformer</span>
+            
+            <span class="tag">Qwen3-TTS</span>
+            
+            <span class="tag">data parallelism</span>
+            
+            <span class="tag">sharding strategies</span>
+            
+        </div>
+
+        
+
+        
+        <h2>Related Articles</h2>
+        <div class="articles-grid">
+            
+            <a href="../articles/the-article-details-a-production-scale-architecture-for-training-a-7b-vision-language-model-using-ov.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">Web Article</span>
+                    <span>2026-02-27</span>
+                </div>
+                <h3>The article details a production-scale architecture for training a 7B vision-language model using over 20TB of multimodal data streamed to 160 GPUs wi</h3>
+                <p class="summary">The article details a production-scale architecture for training a 7B vision-language model using over 20TB of multimodal data streamed to 160 GPUs without downloading the entire dataset locally. It explains how MosaicML Streaming (MDS) enables high-throughput, fault-tolerant training by transforming cloud storage latency into efficient, shard-based data streaming, supported by decoupled tokenization, training, and validation pipelines. The approach maximizes GPU utilization and operational resilience for large-scale, multi-week training runs.</p>
+            </a>
+            
+            <a href="../articles/aayush-garg-details-his-implementation-of-grpo-guided-reinforcement-policy-optimization-from-scrat.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-27</span>
+                </div>
+                <h3>Aayush Garg details his implementation of GRPO (Guided Reinforcement Policy Optimization) from scratch, focusing on training the Qwen 2.5-Math-1.5B mo</h3>
+                <p class="summary">Aayush Garg details his implementation of GRPO (Guided Reinforcement Policy Optimization) from scratch, focusing on training the Qwen 2.5-Math-1.5B model using pure reinforcement learning and conducting extensive ablation studies to understand the impact of various training choices. He shares insights on experiment optimizations, cost-effective cloud training with Modal, and provides public access to all code, configs, checkpoints, and logs.</p>
+            </a>
+            
+            <a href="../articles/aayush-garg-implemented-grpo-guided-reinforcement-policy-optimization-training-from-scratch-focus.html" class="article-card">
+                <div class="article-meta">
+                    <span class="article-type">LinkedIn Article/Post</span>
+                    <span>2026-02-27</span>
+                </div>
+                <h3>Aayush Garg implemented GRPO (Guided Reinforcement Policy Optimization) training from scratch, focusing on understanding the method through extensive </h3>
+                <p class="summary">Aayush Garg implemented GRPO (Guided Reinforcement Policy Optimization) training from scratch, focusing on understanding the method through extensive ablation studies and optimizations. He trained the Qwen 2.5-Math-1.5B model using pure RL, achieving a significant accuracy boost on the MATH validation set, and shared all code, configs, and logs publicly for reproducibility.</p>
+            </a>
+            
+        </div>
+        
+    </div>
+</article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+    
+</body>
+</html>

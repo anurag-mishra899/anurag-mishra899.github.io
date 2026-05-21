@@ -103,22 +103,22 @@
                 <p class="summary">The post critiques the hype around vLLM for LLM inference, arguing that many influencers promote it without understanding inference engine internals. It explains that while vLLM excels at high-concurrency, single-turn workloads, SGLang is significantly faster for agentic, multi-turn, or prefix-reuse scenarios due to its RadixAttention caching. The author provides a practical decision matrix for choosing between inference engines based on workload characteristics.</p>
             </a>
             
-            <a href="../articles/the-post-critiques-the-hype-around-vllm-especially-among-influencers-who-may-not-understand-inferen.html" class="article-card">
+            <a href="../articles/the-post-critiques-the-hype-around-vllm-for-llm-inference-emphasizing-that-many-influencers-recomme.html" class="article-card">
                 <div class="article-meta">
                     <span class="article-type">LinkedIn Article/Post</span>
-                    <span>2026-03-01</span>
+                    <span>2026-02-27</span>
                 </div>
-                <h3>The post critiques the hype around vLLM, especially among influencers who may not understand inference engines deeply, and provides a practical decisi</h3>
-                <p class="summary">The post critiques the hype around vLLM, especially among influencers who may not understand inference engines deeply, and provides a practical decision matrix for choosing between vLLM and SGLang based on workload characteristics. It highlights that SGLang outperforms vLLM for agentic, multi-turn, and prefix-reuse-heavy workloads due to its RadixAttention caching, while vLLM excels at high-concurrency, single-turn scenarios with its PagedAttention and batching. The key takeaway is to select your inference engine based on the specific needs of your workload, not popularity.</p>
+                <h3>The post critiques the hype around vLLM for LLM inference, emphasizing that many influencers recommend it without understanding how inference engines </h3>
+                <p class="summary">The post critiques the hype around vLLM for LLM inference, emphasizing that many influencers recommend it without understanding how inference engines work. It explains that while vLLM excels at high concurrency and single-turn workloads, SGLang offers significantly lower time-to-first-token (TTFT) for agentic, multi-turn, or prefix-reuse scenarios due to its superior caching mechanism. The author advises engineers to choose inference engines based on actual workload characteristics rather than popularity.</p>
             </a>
             
-            <a href="../articles/the-post-explains-why-high-cpu-usage-alongside-lower-gpu-utilization-is-common-when-serving-large-la.html" class="article-card">
+            <a href="../articles/the-main-post-by-shreeraj-bhat-explains-why-high-cpu-usage-and-relatively-low-gpu-utilization-are-co.html" class="article-card">
                 <div class="article-meta">
                     <span class="article-type">LinkedIn Article/Post</span>
-                    <span>2026-03-01</span>
+                    <span>2026-02-28</span>
                 </div>
-                <h3>The post explains why high CPU usage alongside lower GPU utilization is common when serving large language models (LLMs) with vLLM. It highlights that</h3>
-                <p class="summary">The post explains why high CPU usage alongside lower GPU utilization is common when serving large language models (LLMs) with vLLM. It highlights that while the GPU is compute-heavy during the "Prefill" phase, the "Decode" phase is often memory-bound, and the CPU is heavily involved in orchestration tasks such as scheduling, tokenization, and sampling, as well as handling Python and async overhead from frameworks like FastAPI or Uvicorn.</p>
+                <h3>The main post by Shreeraj Bhat explains why high CPU usage and relatively low GPU utilization are common during LLM (Large Language Model) inference, </h3>
+                <p class="summary">The main post by Shreeraj Bhat explains why high CPU usage and relatively low GPU utilization are common during LLM (Large Language Model) inference, especially with vLLM serving. It highlights that while the GPU handles compute-heavy tasks, the CPU is responsible for orchestration, tokenization, and networking overhead, which can lead to CPU bottlenecks. Understanding these system-level behaviors is crucial for optimizing infrastructure and throughput in LLM deployments.</p>
             </a>
             
         </div>
