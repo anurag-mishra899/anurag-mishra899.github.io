@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Security &amp; Ethics - AI Knowledge Base</title>
+    <meta name="description" content="Articles under AI Security &amp; Ethics">
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="./index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+<div class="breadcrumb">
+    <a href="./">Home</a>
+    <span>›</span>
+    <span>AI Security &amp; Ethics</span>
+</div>
+
+<div class="hero" style="padding: 2rem 0;">
+    <h1>AI Security &amp; Ethics</h1>
+    <p>1 article(s) in this category</p>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">1</div>
+            <div class="stat-label">Articles</div>
+        </div>
+    </div>
+</div>
+
+<div class="search-container">
+    <input type="text" id="searchBox" class="search-box" placeholder="Search in AI Security &amp; Ethics...">
+</div>
+
+<div class="articles-grid">
+    <a href="./articles/2026-03-21-071-the-agentic-evaluations-workshop-deep-dive-on-the-future-on-evals-for-agents.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">YouTube Video</span>
+            <span>2026-03-21</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The &#34;Agentic Evaluations Workshop - Deep Dive on the Future on Evals for Agents&#34; discusses advanced </h3>
+        <p class="summary">The &#34;Agentic Evaluations Workshop - Deep Dive on the Future on Evals for Agents&#34; discusses advanced methods and frameworks for evaluating AI agents, focusing on the challenges and future directions in agentic evaluation. The workshop brings together experts to share insights, best practices, and emerging technologies for assessing the capabilities and safety of autonomous agents.</p>
+        <div class="article-tags">
+            <span class="tag">agentic evaluation</span>
+            <span class="tag">AI agents</span>
+            <span class="tag">evaluation frameworks</span>
+            <span class="tag">autonomous agents</span>
+            <span class="tag">AI safety</span>
+            <span class="tag">benchmarking</span>
+            <span class="tag">best practices</span>
+        </div>
+    </a>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+<script>
+document.getElementById('searchBox').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const articles = document.querySelectorAll('.article-card');
+
+    articles.forEach(article => {
+        const title = article.querySelector('h3').textContent.toLowerCase();
+        const summary = article.querySelector('.summary').textContent.toLowerCase();
+        const tags = Array.from(article.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+
+        if (title.includes(searchTerm) || summary.includes(searchTerm) || tags.includes(searchTerm)) {
+            article.style.display = 'block';
+        } else {
+            article.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>

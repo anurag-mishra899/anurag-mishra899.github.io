@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uncategorized &amp; Miscellaneous - AI Knowledge Base</title>
+    <meta name="description" content="Articles under Uncategorized &amp; Miscellaneous">
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="./index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+<div class="breadcrumb">
+    <a href="./">Home</a>
+    <span>›</span>
+    <span>Uncategorized &amp; Miscellaneous</span>
+</div>
+
+<div class="hero" style="padding: 2rem 0;">
+    <h1>Uncategorized &amp; Miscellaneous</h1>
+    <p>2 article(s) in this category</p>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Articles</div>
+        </div>
+    </div>
+</div>
+
+<div class="search-container">
+    <input type="text" id="searchBox" class="search-box" placeholder="Search in Uncategorized &amp; Miscellaneous...">
+</div>
+
+<div class="articles-grid">
+    <a href="./articles/2026-04-24-155-the-post-discusses-the-prefill-decode-interference-problem-in-production-llm.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">LinkedIn Article/Post</span>
+            <span>2026-04-24</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The post discusses the &#34;prefill-decode interference&#34; problem in production LLM (Large Language Model</h3>
+        <p class="summary">The post discusses the &#34;prefill-decode interference&#34; problem in production LLM (Large Language Model) serving, where long prompts can stall other users&#39; generations. It explains how &#34;chunked prefill&#34; and &#34;prefix caching&#34; techniques can significantly improve responsiveness and reduce latency for concurrent users. These solutions are practical and can be enabled in current vLLM deployments.</p>
+        <div class="article-tags">
+            <span class="tag">prefill-decode interference</span>
+            <span class="tag">chunked prefill</span>
+            <span class="tag">prefix caching</span>
+            <span class="tag">LLM serving</span>
+            <span class="tag">vLLM</span>
+            <span class="tag">GPU latency</span>
+            <span class="tag">production inference</span>
+            <span class="tag">KV cache</span>
+        </div>
+    </a>
+    <a href="./articles/2026-04-09-119-the-better-harness-system-is-a-research-tool-for-autonomous-optimization-of-agen.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">GitHub Repository</span>
+            <span>2026-04-09</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The better-harness system is a research tool for autonomous optimization of agent harnesses, allowin</h3>
+        <p class="summary">The better-harness system is a research tool for autonomous optimization of agent harnesses, allowing one Deep Agent to iteratively improve another agent&#39;s harness using evaluation cases. It supports editable surfaces like prompts, tools, and middleware, and operates via a configuration-driven workflow with train/holdout splits and integration with runners like pytest or Harbor. The system is designed for flexibility, research, and easy adaptation to different agent stacks.</p>
+        <div class="article-tags">
+            <span class="tag">deepagents</span>
+            <span class="tag">harness optimization</span>
+            <span class="tag">autonomous agents</span>
+            <span class="tag">evals</span>
+            <span class="tag">prompts</span>
+            <span class="tag">middleware</span>
+            <span class="tag">pytest</span>
+            <span class="tag">Harbor</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">configuration files</span>
+            <span class="tag">train/holdout splits</span>
+            <span class="tag">LangSmith</span>
+        </div>
+    </a>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+<script>
+document.getElementById('searchBox').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const articles = document.querySelectorAll('.article-card');
+
+    articles.forEach(article => {
+        const title = article.querySelector('h3').textContent.toLowerCase();
+        const summary = article.querySelector('.summary').textContent.toLowerCase();
+        const tags = Array.from(article.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+
+        if (title.includes(searchTerm) || summary.includes(searchTerm) || tags.includes(searchTerm)) {
+            article.style.display = 'block';
+        } else {
+            article.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>

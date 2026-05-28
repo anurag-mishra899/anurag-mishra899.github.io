@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health, Wellness &amp; Productivity - AI Knowledge Base</title>
+    <meta name="description" content="Articles under Health, Wellness &amp; Productivity">
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="./index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+<div class="breadcrumb">
+    <a href="./">Home</a>
+    <span>›</span>
+    <span>Health, Wellness &amp; Productivity</span>
+</div>
+
+<div class="hero" style="padding: 2rem 0;">
+    <h1>Health, Wellness &amp; Productivity</h1>
+    <p>3 article(s) in this category</p>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Articles</div>
+        </div>
+    </div>
+</div>
+
+<div class="search-container">
+    <input type="text" id="searchBox" class="search-box" placeholder="Search in Health, Wellness &amp; Productivity...">
+</div>
+
+<div class="articles-grid">
+    <a href="./articles/2026-05-19-186-the-video-discusses-the-concept-of-building-a-second-brain-using-artificial-in.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">YouTube Video</span>
+            <span>2026-05-19</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The video discusses the concept of building a &#34;Second Brain&#34; using artificial intelligence, focusing</h3>
+        <p class="summary">The video discusses the concept of building a &#34;Second Brain&#34; using artificial intelligence, focusing on the opportunities, risks, and implications of AI adoption in Singapore. It explores how AI can enhance productivity and decision-making, while also addressing concerns around data privacy, ethics, and societal impact.</p>
+        <div class="article-tags">
+            <span class="tag">Second Brain</span>
+            <span class="tag">artificial intelligence</span>
+            <span class="tag">AI adoption</span>
+            <span class="tag">Singapore</span>
+            <span class="tag">productivity</span>
+            <span class="tag">decision-making</span>
+            <span class="tag">data privacy</span>
+            <span class="tag">ethics</span>
+            <span class="tag">societal impact</span>
+        </div>
+    </a>
+    <a href="./articles/2026-04-26-167-the-video-presents-a-quick-3-minute-daily-mobility-routine-designed-to-countera.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">YouTube Video</span>
+            <span>2026-04-26</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The video presents a quick, 3-minute daily mobility routine designed to counteract the negative effe</h3>
+        <p class="summary">The video presents a quick, 3-minute daily mobility routine designed to counteract the negative effects of prolonged sitting. It demonstrates specific exercises aimed at improving flexibility, posture, and overall mobility for people who spend much of their day seated.</p>
+        <div class="article-tags">
+            <span class="tag">mobility routine</span>
+            <span class="tag">flexibility</span>
+            <span class="tag">posture</span>
+            <span class="tag">exercise</span>
+            <span class="tag">sitting</span>
+            <span class="tag">daily routine</span>
+        </div>
+    </a>
+    <a href="./articles/2026-03-20-063-nvidia-has-launched-the-agent-toolkit-an-open-platform-for-building-and-deployi.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">Web Article</span>
+            <span>2026-03-20</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>NVIDIA has launched the Agent Toolkit, an open platform for building and deploying autonomous, self-</h3>
+        <p class="summary">NVIDIA has launched the Agent Toolkit, an open platform for building and deploying autonomous, self-evolving AI agents aimed at transforming enterprise and knowledge work. The toolkit includes open source components like OpenShell for secure agent deployment and AI-Q Blueprint for advanced agentic search, and is being adopted by leading enterprise software companies to enhance productivity, security, and efficiency in AI-driven workflows.</p>
+        <div class="article-tags">
+            <span class="tag">NVIDIA Agent Toolkit</span>
+            <span class="tag">OpenShell</span>
+            <span class="tag">AI agents</span>
+            <span class="tag">AI-Q Blueprint</span>
+            <span class="tag">Nemotron</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">enterprise AI</span>
+            <span class="tag">agentic search</span>
+            <span class="tag">autonomous agents</span>
+            <span class="tag">security</span>
+            <span class="tag">productivity</span>
+            <span class="tag">DeepResearch Bench</span>
+            <span class="tag">software platforms integration</span>
+        </div>
+    </a>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+<script>
+document.getElementById('searchBox').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const articles = document.querySelectorAll('.article-card');
+
+    articles.forEach(article => {
+        const title = article.querySelector('h3').textContent.toLowerCase();
+        const summary = article.querySelector('.summary').textContent.toLowerCase();
+        const tags = Array.from(article.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+
+        if (title.includes(searchTerm) || summary.includes(searchTerm) || tags.includes(searchTerm)) {
+            article.style.display = 'block';
+        } else {
+            article.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Skills - AI Knowledge Base</title>
+    <meta name="description" content="Articles under Communication Skills">
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="./index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+<div class="breadcrumb">
+    <a href="./">Home</a>
+    <span>›</span>
+    <span>Communication Skills</span>
+</div>
+
+<div class="hero" style="padding: 2rem 0;">
+    <h1>Communication Skills</h1>
+    <p>3 article(s) in this category</p>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Articles</div>
+        </div>
+    </div>
+</div>
+
+<div class="search-container">
+    <input type="text" id="searchBox" class="search-box" placeholder="Search in Communication Skills...">
+</div>
+
+<div class="articles-grid">
+    <a href="./articles/2026-05-04-180-the-content-is-a-listing-of-various-self-help-productivity-and-philosophical-b.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">Web Article</span>
+            <span>2026-05-04</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The content is a listing of various self-help, productivity, and philosophical books available in PD</h3>
+        <p class="summary">The content is a listing of various self-help, productivity, and philosophical books available in PDF and EPUB formats on a shared Google Drive folder. The collection covers topics such as algorithms, speed arithmetic, communication, argumentation, clear thinking, tidying up, existentialism, and personal finance.</p>
+        <div class="article-tags">
+            <span class="tag">self-help</span>
+            <span class="tag">productivity</span>
+            <span class="tag">algorithms</span>
+            <span class="tag">speed arithmetic</span>
+            <span class="tag">communication</span>
+            <span class="tag">argumentation</span>
+            <span class="tag">clear thinking</span>
+            <span class="tag">tidying up</span>
+            <span class="tag">existentialism</span>
+            <span class="tag">personal finance</span>
+        </div>
+    </a>
+    <a href="./articles/2026-03-29-085-the-video-how-to-speak-provides-guidance-on-effective-public-speaking-techniqu.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">YouTube Video</span>
+            <span>2026-03-29</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The video &#34;How to Speak&#34; provides guidance on effective public speaking techniques. It covers strate</h3>
+        <p class="summary">The video &#34;How to Speak&#34; provides guidance on effective public speaking techniques. It covers strategies to improve communication skills, engage audiences, and deliver impactful presentations.</p>
+        <div class="article-tags">
+            <span class="tag">public speaking</span>
+            <span class="tag">communication skills</span>
+            <span class="tag">presentations</span>
+            <span class="tag">audience engagement</span>
+        </div>
+    </a>
+    <a href="./articles/2026-03-05-038-the-article-explores-the-issue-of-gpu-stragglers-in-large-scale-distributed-mach.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">Web Article</span>
+            <span>2026-03-05</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The article explores the issue of GPU stragglers in large-scale distributed machine learning trainin</h3>
+        <p class="summary">The article explores the issue of GPU stragglers in large-scale distributed machine learning training, where a single slow GPU can significantly degrade overall system performance and waste substantial compute resources. It emphasizes that straggler problems are often rooted in hardware and infrastructure issues, requiring cross-layer correlation and automated tools for effective detection and remediation. The article also demonstrates a practical example of identifying and resolving a compute straggler using monitoring and correlation dashboards.</p>
+        <div class="article-tags">
+            <span class="tag">GPU stragglers</span>
+            <span class="tag">distributed training</span>
+            <span class="tag">LLM training</span>
+            <span class="tag">infrastructure monitoring</span>
+            <span class="tag">performance debugging</span>
+            <span class="tag">cross-layer correlation</span>
+            <span class="tag">Factryze platform</span>
+            <span class="tag">traceML</span>
+            <span class="tag">fail-slow events</span>
+            <span class="tag">compute and communication bottlenecks</span>
+        </div>
+    </a>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+<script>
+document.getElementById('searchBox').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const articles = document.querySelectorAll('.article-card');
+
+    articles.forEach(article => {
+        const title = article.querySelector('h3').textContent.toLowerCase();
+        const summary = article.querySelector('.summary').textContent.toLowerCase();
+        const tags = Array.from(article.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+
+        if (title.includes(searchTerm) || summary.includes(searchTerm) || tags.includes(searchTerm)) {
+            article.style.display = 'block';
+        } else {
+            article.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>

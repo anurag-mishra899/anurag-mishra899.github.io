@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Introductions &amp; Overviews - AI Knowledge Base</title>
+    <meta name="description" content="Articles under Series Introductions &amp; Overviews">
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="./index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+<div class="breadcrumb">
+    <a href="./">Home</a>
+    <span>›</span>
+    <span>Series Introductions &amp; Overviews</span>
+</div>
+
+<div class="hero" style="padding: 2rem 0;">
+    <h1>Series Introductions &amp; Overviews</h1>
+    <p>3 article(s) in this category</p>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Articles</div>
+        </div>
+    </div>
+</div>
+
+<div class="search-container">
+    <input type="text" id="searchBox" class="search-box" placeholder="Search in Series Introductions &amp; Overviews...">
+</div>
+
+<div class="articles-grid">
+    <a href="./articles/2026-05-12-182-igor-kotenkov-released-an-annotated-walkthrough-of-the-deepseek-v4-paper-provid.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">LinkedIn Article/Post</span>
+            <span>2026-05-12</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>Igor Kotenkov released an annotated walkthrough of the DeepSeek v4 paper, providing detailed explana</h3>
+        <p class="summary">Igor Kotenkov released an annotated walkthrough of the DeepSeek v4 paper, providing detailed explanations, visualizations, code snippets, and context to help readers understand complex concepts often overlooked in typical reviews. The guide covers topics such as MoE Router activation functions, Birkhoff polytope, attention mechanisms, split-KV/split-K, and Reverse KL, aiming to make the paper more accessible and actionable for engineers and researchers.</p>
+        <div class="article-tags">
+            <span class="tag">DeepSeek v4</span>
+            <span class="tag">Annotated Paper Walkthrough</span>
+            <span class="tag">MoE Router</span>
+            <span class="tag">Sqrt-Softplus</span>
+            <span class="tag">Birkhoff polytope</span>
+            <span class="tag">Attention mechanisms</span>
+            <span class="tag">split-KV</span>
+            <span class="tag">split-K</span>
+            <span class="tag">Reverse KL</span>
+            <span class="tag">DSA (Dynamic Sparse Attention)</span>
+            <span class="tag">NSA (Native Sparse Attention)</span>
+            <span class="tag">mHC optimizer</span>
+            <span class="tag">Muon optimizer</span>
+        </div>
+    </a>
+    <a href="./articles/2026-03-12-049-this-video-serves-as-the-introduction-to-a-series-focused-on-building-deepseek-f.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">YouTube Video</span>
+            <span>2026-03-12</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>This video serves as the introduction to a series focused on building DeepSeek from scratch. It outl</h3>
+        <p class="summary">This video serves as the introduction to a series focused on building DeepSeek from scratch. It outlines what viewers can expect to learn throughout the series, including foundational concepts and the overall approach to constructing DeepSeek.</p>
+        <div class="article-tags">
+            <span class="tag">DeepSeek</span>
+            <span class="tag">series introduction</span>
+            <span class="tag">foundational concepts</span>
+            <span class="tag">project overview</span>
+        </div>
+    </a>
+    <a href="./articles/2026-03-04-034-the-article-discusses-the-integration-and-engineering-of-mixture-of-experts-moe.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">Web Article</span>
+            <span>2026-03-04</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The article discusses the integration and engineering of Mixture of Experts (MoE) architectures with</h3>
+        <p class="summary">The article discusses the integration and engineering of Mixture of Experts (MoE) architectures within Transformer models, highlighting their advantages in compute efficiency, parallelization, and industry adoption. It details how the transformers library has evolved to support MoEs, focusing on improvements in weight loading, expert backend, and parallelism, including the introduction of dynamic weight loading via WeightConverter for efficient model execution.</p>
+        <div class="article-tags">
+            <span class="tag">Mixture of Experts (MoE)</span>
+            <span class="tag">Transformers</span>
+            <span class="tag">WeightConverter</span>
+            <span class="tag">Expert Parallelism</span>
+            <span class="tag">Model Scaling</span>
+            <span class="tag">Dynamic Weight Loading</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Model Checkpoints</span>
+            <span class="tag">DeepSeek</span>
+            <span class="tag">Grouped GEMMs</span>
+            <span class="tag">Fused MoE Implementations</span>
+            <span class="tag">Industry Adoption</span>
+        </div>
+    </a>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+<script>
+document.getElementById('searchBox').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const articles = document.querySelectorAll('.article-card');
+
+    articles.forEach(article => {
+        const title = article.querySelector('h3').textContent.toLowerCase();
+        const summary = article.querySelector('.summary').textContent.toLowerCase();
+        const tags = Array.from(article.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+
+        if (title.includes(searchTerm) || summary.includes(searchTerm) || tags.includes(searchTerm)) {
+            article.style.display = 'block';
+        } else {
+            article.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>

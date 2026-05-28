@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Security &amp; Browser Compatibility - AI Knowledge Base</title>
+    <meta name="description" content="Articles under Web Security &amp; Browser Compatibility">
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="./index.html" class="logo">AI Knowledge Base</a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="https://github.com/anurag-mishra899" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+<div class="breadcrumb">
+    <a href="./">Home</a>
+    <span>›</span>
+    <span>Web Security &amp; Browser Compatibility</span>
+</div>
+
+<div class="hero" style="padding: 2rem 0;">
+    <h1>Web Security &amp; Browser Compatibility</h1>
+    <p>4 article(s) in this category</p>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Articles</div>
+        </div>
+    </div>
+</div>
+
+<div class="search-container">
+    <input type="text" id="searchBox" class="search-box" placeholder="Search in Web Security &amp; Browser Compatibility...">
+</div>
+
+<div class="articles-grid">
+    <a href="./articles/2026-04-15-137-the-content-is-a-linkedin-notice-informing-users-that-they-are-about-to-leave-li.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">Web Article</span>
+            <span>2026-04-15</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The content is a LinkedIn notice informing users that they are about to leave LinkedIn and visit an </h3>
+        <p class="summary">The content is a LinkedIn notice informing users that they are about to leave LinkedIn and visit an external site, specifically an OpenAI page about &#34;harness engineering.&#34; It also mentions that the external experience is optimized for Chrome, Edge, and Safari browsers.</p>
+        <div class="article-tags">
+            <span class="tag">LinkedIn</span>
+            <span class="tag">external link warning</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">harness engineering</span>
+            <span class="tag">web browser compatibility</span>
+        </div>
+    </a>
+    <a href="./articles/2026-04-15-138-the-article-provides-a-link-to-an-external-resource-learn-harness-engineering.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">Web Article</span>
+            <span>2026-04-15</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The article provides a link to an external resource, &#34;Learn Harness Engineering,&#34; which offers educa</h3>
+        <p class="summary">The article provides a link to an external resource, &#34;Learn Harness Engineering,&#34; which offers educational content about harness engineering. The experience is optimized for Chrome, Edge, and Safari browsers.</p>
+        <div class="article-tags">
+            <span class="tag">harness engineering</span>
+            <span class="tag">web-based learning</span>
+            <span class="tag">browser compatibility</span>
+        </div>
+    </a>
+    <a href="./articles/2026-04-15-139-the-content-provides-a-warning-that-the-user-is-about-to-leave-linkedin-and-visi.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">Web Article</span>
+            <span>2026-04-15</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The content provides a warning that the user is about to leave LinkedIn and visit an external websit</h3>
+        <p class="summary">The content provides a warning that the user is about to leave LinkedIn and visit an external website, specifically &#34;https://claude-code-from-source.com/&#34;. It notes that LinkedIn cannot verify the safety of the external site and recommends using Chrome, Edge, or Safari for the best experience.</p>
+        <div class="article-tags">
+            <span class="tag">external links</span>
+            <span class="tag">web safety</span>
+            <span class="tag">browser compatibility</span>
+        </div>
+    </a>
+    <a href="./articles/2026-04-15-140-the-article-discusses-agent-harness-2026-a-project-or-tool-featured-on-phil-s.html" class="article-card">
+        <div class="article-meta">
+            <span class="article-type">Web Article</span>
+            <span>2026-04-15</span>
+            <span>Shared by Anurag Mishra</span>
+        </div>
+        <h3>The article discusses &#34;Agent Harness 2026,&#34; a project or tool featured on Phil Schmid&#39;s website, whi</h3>
+        <p class="summary">The article discusses &#34;Agent Harness 2026,&#34; a project or tool featured on Phil Schmid&#39;s website, which likely focuses on advancements or applications in AI agents. It provides information or demonstrations optimized for modern browsers such as Chrome, Edge, and Safari.</p>
+        <div class="article-tags">
+            <span class="tag">Agent Harness 2026</span>
+            <span class="tag">AI agents</span>
+            <span class="tag">web optimization</span>
+            <span class="tag">Phil Schmid</span>
+        </div>
+    </a>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Knowledge Base. Built with Python & Azure OpenAI.</p>
+        <p>Personal knowledge base for GenAI, LLMs, AI Agents, and ML Infrastructure</p>
+    </footer>
+
+<script>
+document.getElementById('searchBox').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const articles = document.querySelectorAll('.article-card');
+
+    articles.forEach(article => {
+        const title = article.querySelector('h3').textContent.toLowerCase();
+        const summary = article.querySelector('.summary').textContent.toLowerCase();
+        const tags = Array.from(article.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+
+        if (title.includes(searchTerm) || summary.includes(searchTerm) || tags.includes(searchTerm)) {
+            article.style.display = 'block';
+        } else {
+            article.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>
